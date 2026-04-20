@@ -1,0 +1,126 @@
+/* Reset some default styles */
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: Arial, sans-serif;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+}
+
+/* Header styles */
+header nav ul {
+display: flex;
+justify-content: flex-end;
+list-style: none;
+padding: 1rem 2rem;
+gap: 1.5rem;
+}
+header nav ul li a,
+header nav ul li button {
+color: #5f6368;
+text-decoration: none;
+background: none;
+border: none;
+cursor: pointer;
+font-size: 0.9rem;
+}
+header nav ul li button:hover,
+header nav ul li a:hover {
+text-decoration: underline;
+}
+
+/* Main section */
+main {
+flex: 1;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 2rem;
+}
+.logo {
+width: 272px;
+margin-bottom: 20px;
+}
+.search-form {
+width: 100%;
+max-width: 600px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.search-form input[type="text"] {
+width: 100%;
+padding: 10px 15px;
+font-size: 1.1rem;
+border: 1px solid #dfe1e5;
+border-radius: 24px;
+outline: none;
+box-shadow: none;
+transition: box-shadow 0.3s ease;
+}
+.search-form input[type="text"]:focus {
+box-shadow: 0 0 5px rgba(66, 133, 244, 0.6);
+border-color: #4285f4;
+}
+.buttons {
+margin-top: 20px;
+display: flex;
+gap: 10px;
+}
+.buttons button {
+background-color: #f8f9fa;
+border: 1px solid #f8f9fa;
+border-radius: 4px;
+padding: 10px 20px;
+font-size: 0.9rem;
+cursor: pointer;
+color: #3c4043;
+transition: box-shadow 0.2s ease;
+}
+.buttons button:hover {
+box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+border-color: #c6c6c6;
+}
+
+/* Footer styles */
+footer {
+background-color: #f2f2f2;
+padding: 1rem 2rem;
+font-size: 0.8rem;
+color: #70757a;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+footer nav ul {
+list-style: none;
+display: flex;
+gap: 1rem;
+}
+footer nav ul li a {
+color: #70757a;
+text-decoration: none;
+}
+footer nav ul li a:hover {
+text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+header nav ul {
+justify-content: center;
+}
+.buttons {
+flex-direction: column;
+}
+.buttons button {
+width: 100%;
+}
+}
+
+/* https://medium.com/@kabakelenka/how-i-built-a-google-homepage-clone-using-html-and-css-a-step-by-step-guide-7c9d37c48485 */
