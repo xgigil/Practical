@@ -6,6 +6,3 @@ services:
       - 8000:80
     volumes:
       - .:/usr/share/nginx/html
-
-
-# https://github.com/2502-XU-ITCC15-1A/Group-3-Guidance-and-Counseling-Office-Appointment-and-Management-System---1
