@@ -6,15 +6,14 @@ This project is to create a static clone of Google Website
 
 # Setup
 ```bash
+# All in terminal
 # 1. Go to project directory
+cd practical
 
-# 2. Install dependencies
-npm install
-npm install mysql2
+# 2. Docker Compose
+docker compose up -d
 
-# 3. Run server
-docker build -t 
+# 3. Start Container 
+docker run -p 8080:80 my-nginx-image
 
-# To start your container run 
-docker run -p 9001:9001 dockerHubUsername/apiservice
 ```
